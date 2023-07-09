@@ -4,27 +4,30 @@
 // alterar pagina por ter clicado no botao
 const botaoNota = document.querySelectorAll('.nota');
 botaoNota.forEach((nota) => {
-    nota.addEventListener('mouseenter', () => {
+    nota.addEventListener('mouseover', () => {
         const botaos = document.querySelector('.selecionado');
-        console.log(botaos)
-        //botaos.classList.remove('selecionado');
-        nota.classList.add('selecionado');
-        console.log(botaoNota);
+        if (botaos != null) {
+            botaos.classList.remove('selecionado');
+            nota.classList.add('selecionado');
+        }
+        else {
+            nota.classList.add('selecionado');
+        }
     })
-    nota.addEventListener('mouseout',() => {
-        const botaos = document.querySelector('.selecionado');
-        botaos.classList.remove('selecionado');
+    nota.addEventListener('mouseout', () => {
+        nota.classList.remove('selecionado');
     })
+
 })
 botaoNota.forEach((nota) => {
     nota.addEventListener('click', () => {
-        const botaoc = document.querySelector('.clicado');
-        const botaosend = document.getElementsByClassName('butao');
-        botaoc.classList.remove('clicado');
-        nota.classList.add('clicado');
+        const botaoc = document.querySelector('.click');
+        if (botaoc != null) {
+            botaoc.classList.remove('click');
+            nota.classList.add('click');
+        }
+        else {
+            nota.classList.add('click');
+        }
     })
 })
-
-//const botaoSelec = document.querySelector('.selecionada');
-/*   botaoSelec.classList.remove('selecionada');
-   botaoSelec.classList.add()*/
