@@ -151,4 +151,10 @@ h1 {
 .txt>p{
     color:  hsl(217, 12%, 63%);
 }
-    
+
+
+@media (max-width: 600px) {
+    .pagina{
+        transform: scale(.7);
+    }
+}
