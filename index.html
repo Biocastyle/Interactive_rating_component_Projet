@@ -11,7 +11,7 @@
 <body>
     <main class="pagina">
         <section class="bloco-dados">
-            <section class="conteudo">
+            <section class="opcoes">
                 <div class="estrela">
                     <img src="Projet/images/icon-star.svg" alt="">
                 </div>
@@ -22,24 +22,36 @@
                     </p>
                 </div>
                 <div class="tot-notas">
-                    <div class="nota ">
+                    <div id="1" class="nota" onclick="selecao1()">
                         <h3>1</h3>
                     </div>
-                    <div class="nota">
+                    <div id="2" class="nota" onclick="selecao2()">
                         <h3>2</h3>
                     </div>
-                    <div class="nota">
+                    <div id="3" class="nota"onclick="selecao3()">
                         <h3>3</h3>
                     </div>
-                    <div class="nota">
+                    <div id="4" class="nota" onclick="selecao4()">
                         <h3>4</h3>
                     </div>
-                    <div class="nota">
+                    <div id="5" class="nota" onclick="selecao5()">
                         <h3>5</h3>
                     </div>
                 </div>
-                <div class="butao">
+                <div class="butao" onclick="submit()">
                     <a href="src/page_conf.html" id="link">submit</a>
+                </div>
+            </section>
+            <section class="final">
+                <div class="img_tk">
+                    <img src="Projet/images/illustration-thank-you.svg" alt="">
+                </div>
+                <div class="opselec">
+                    <span id="opselec">Teste</span>
+                </div>
+                <div class="txt">
+                    <h2>Thank You!</h2>
+                    <p>We appreciete you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
                 </div>
             </section>
         </section>
